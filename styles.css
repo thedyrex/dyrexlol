@@ -219,16 +219,6 @@ video {
     vertical-align: baseline;
   }
 
-
-  img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;    
-    transform: scale(200%) translateY(-270%);
-    position: relative;
-    animation: fadeIn ease-in-out forwards;
-  }
-
 #crazy{
   border-radius: 5px;
   background: linear-gradient(to right, #ff97ee, #ff58ff);  

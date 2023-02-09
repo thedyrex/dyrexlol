@@ -227,9 +227,6 @@ video {
     transform: scale(200%) translateY(-270%);
     position: relative;
     animation: fadeIn ease-in-out forwards;
-    animation-duration: 0.7s;
-    animation-delay: 2s;
-    opacity: 0;
   }
 
 #crazy{

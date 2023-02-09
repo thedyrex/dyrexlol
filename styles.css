@@ -1,0 +1,250 @@
+.box {
+  width: 400px;
+  height: 200px;
+  background-color: lightgrey;
+  border-radius: 20px;
+  box-shadow: 50px 50px 50px 50px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  padding: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: Arial;
+  animation: float 4s ease-in-out infinite alternate;
+  flex-direction: column;
+  align-items: center;
+  animation: fadeIn 0.0001s;
+  opacity: 75%;
+}
+
+@media screen and (max-width: 480px) {}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+ok {
+  text-align: center;
+  font-family: Arial;
+  font-size: 36px;
+  color: white;
+  z-index: 10000;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0); /* transparent background */
+  z-index: 1; /* make sure it's on top of the video */
+}
+
+.box h1 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.box p {
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.float {
+  float: right;
+  margin-left: 10px;
+  transform: translateY(50%);
+}
+
+.text {
+    font-family: Arial;
+    text-align: center;
+    position: relative;
+    top: 50%;
+    transform: translateY(-75%);
+  }
+
+  .buttons {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+    transform: translateY(250%);   
+}
+  .button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    height: 25px;
+    width: 50px;
+}
+
+footer {
+  position: absolute; /* position the footer absolutely */
+  font-family: Arial;
+  left: 50%; /* center the footer horizontally */
+  bottom: 0; /* position the footer at the bottom of the page */
+  transform: translateX(-50%); /* offset the footer by half its width to center it */
+  text-align: center; /* center the text in the footer */
+  color: #ffffff; /* choose a text color for the footer */
+  font-size: 14px; /* adjust the font size as needed */
+  padding: 10px; /* add some padding to the footer */
+}
+
+#rounded-button {
+  border-radius: 5px;
+  background: linear-gradient(to right, #00d9ff, #ff00ff);  
+  color: white;
+  padding-left: 20;
+  padding-right: 20;
+  padding-top: 10;
+  padding-bottom: 10;
+  top: 50%;
+  left: 50%;
+  z-index: 10000;
+  transform: translate(-70%, 100%);
+  cursor: pointer;
+  flex-direction: column;
+  align-items: center;
+  opacity: 75%;
+  border: none;
+  position: fixed;
+  animation: fadeIn 0.0001s;
+  box-shadow: 0px 0px 0px rgb(83, 83, 83);
+  transition: box-shadow 0.3s ease;
+  font-size: 18px
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+#rounded-button:hover {
+  box-shadow: 10px 10px 5px rgb(83, 83, 83);
+}
+
+video {
+  object-fit: cover;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+#corners-h1{
+  -webkit-text-fill-color: #ffffff;
+  padding: 20px;
+  text-align: left;
+  font-family: 'Poppins', sans-serif;
+  font-size: xx-large;
+  z-index: 16;
+  opacity: 1;
+  width: 60%;
+  cursor: default;
+  margin: auto;
+  transform: translateY(-270%);
+  animation: fadeIn ease-in-out forwards;
+  animation-duration: 0.7s;
+  animation-delay: 2s;
+  opacity: 0;
+}
+
+#corners-h2{
+  -webkit-text-fill-color: #ffffff;
+  padding: 20px;
+  font-family: 'Poppins', sans-serif;
+  font-size: x-large;
+  text-align: left;
+  z-index: 16;
+  opacity: 1;
+  width:60%;
+  cursor: default;
+  margin: auto;
+  transform: translateY(-180%);
+  position: relative;
+  animation: fadeIn ease-in-out forwards;
+  animation-duration: 0.7s;
+  animation-delay: 2s;
+  opacity: 0;
+}
+
+#corners{
+  border-radius: 25px;
+  border: 4px solid #ee32ff;
+  background-color: rgb(36, 32, 32);
+  transform: translateY(50%);
+  margin: auto;
+  width: 80%;
+  height: 50%;
+  padding: 20px;
+  z-index: 15;
+  opacity: 0;
+  animation: fadeinlol ease-in-out forwards;
+  animation-duration: 0.7s;
+  animation-delay: 2s;
+  
+}
+
+
+  
+@keyframes fadeinlol {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 0.75;
+  }
+}
+
+
+#fade-in {
+  animation: fadeIn 1s ease-in;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+
+#hello {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+  }
+
+#crazy{
+  border-radius: 5px;
+  background: linear-gradient(to right, #ff97ee, #ff58ff);  
+  color: white;
+  padding-left: 20;
+  padding-right: 20;
+  padding-top: 10;
+  padding-bottom: 10;
+  top: 50%;
+  left: 50%;
+  z-index: 10000;
+  cursor: pointer;
+  flex-direction: column;
+  align-items: center;
+  opacity: 75%;
+  border: none;
+  position: fixed;
+  box-shadow: 0px 0px 0px rgb(83, 83, 83);
+  transition: box-shadow 0.3s ease;
+  font-size: 18px;
+  animation: fadeIn ease-in-out forwards;
+  animation-duration: 0.7s;
+  animation-delay: 2s;
+  opacity: 0;
+}
+
+#crazy:hover {
+  box-shadow: 10px 10px 5px rgb(83, 83, 83);
+}

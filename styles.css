@@ -226,7 +226,6 @@ video {
     margin-right: auto;    
     transform: scale(200%) translateY(-270%);
     position: relative;
-    animation: fadeIn ease-in-out forwards;
   }
 
 #crazy{

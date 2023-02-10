@@ -140,33 +140,34 @@ video {
 #corners-h1{
   -webkit-text-fill-color: #ffffff;
   padding: 20px;
-  text-align: left;
   font-family: 'Poppins', sans-serif;
-  font-size: xx-large;
-  z-index: 16;
+  height: 10vh;
+  font-size: 3vh;
   opacity: 1;
-  width: 60%;
+  width: 80%;
+  z-index: 16;
   cursor: default;
   margin: auto;
-  transform: translateY(-270%);
+  transform: translateY(-15%) ;
   animation: fadeIn ease-in-out forwards;
   animation-duration: 0.7s;
   animation-delay: 2s;
   opacity: 0;
+  position: relative;
 }
 
 #corners-h2{
   -webkit-text-fill-color: #ffffff;
   padding: 20px;
   font-family: 'Poppins', sans-serif;
-  font-size: x-large;
-  text-align: left;
+  height: 10vh;
+
+  font-size: 3vh;
   z-index: 16;
-  opacity: 1;
-  width:60%;
+  width:70%;
   cursor: default;
   margin: auto;
-  transform: translateY(-180%);
+  transform: translateY(-70%) translateX(-7%);
   position: relative;
   animation: fadeIn ease-in-out forwards;
   animation-duration: 0.7s;
@@ -188,7 +189,7 @@ video {
   animation: fadeinlol ease-in-out forwards;
   animation-duration: 0.7s;
   animation-delay: 2s;
-  
+  position: relative;
 }
 
 
@@ -224,12 +225,13 @@ video {
     display: block;
     margin-left: auto;
     margin-right: auto;    
-    transform: scale(200%) translateY(-270%);
-    position: relative;
+    transform: scale(200%) translateY(-250%) translateX(210%);
+    position:fixed;
     animation: fadeIn ease-in-out forwards;
     animation-duration: 0.7s;
     animation-delay: 2s;
     opacity: 0;
+    height: 10vh;
   }
 
 #crazy{
@@ -240,7 +242,7 @@ video {
   padding-right: 20;
   padding-top: 10;
   padding-bottom: 10;
-  top: 50%;
+  top: 60%;
   left: 50%;
   z-index: 10000;
   cursor: pointer;
